@@ -1,5 +1,62 @@
+*{
+    box-sizing: border-box;
+    font-size:100%;
+}
 body{
     background: url('/About-me/sailboat.jpg') no-repeat center center fixed;
     background-size: cover;
+    display: flex;
+    align-items:top;
+    justify-content:right;
+    height:100vh;
+    position:relative;
 }
 
+.profile-card{
+    position:relative;
+    top:1.8rem;
+    margin: 2.5rem auto;
+    padding:.5rem;
+    width:45%;
+    /*max-width: calc(100vw - 10px);*/
+    height:80vh;
+    border: 2px;
+    border-radius:8px;
+    background-color: hsla(227, 73%, 56%, .5); 
+}
+
+@media screen and (min-width: 630px){
+  .profile-card{
+    margin:2.5rem 8% 2.5rem auto;
+  }
+}
+.head, .content{
+  margin: 0 auto;
+  width:90%;
+}
+
+img{
+  position:relative;
+  left:calc(100% - 120px);
+  width:120px;
+  height:120px;
+  margin-top: 2rem;
+  border: 1px solid #000;
+  border-radius: 50%;
+  padding:1px;
+  filter:grayscale(20%);
+}
+
+img:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
+}
+.name-headline{
+  margin-top: 1.3rem;
+  width:100%;
+}
+
+.name-headline h1{
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
