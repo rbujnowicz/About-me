@@ -14,10 +14,10 @@ body{
 
 .profile-card{
     position:relative;
-    top:1.8rem;
+    top:1.3rem;
     margin: 2.5rem auto;
     padding:.5rem;
-    width:45%;
+    width:65%;
     /*max-width: calc(100vw - 10px);*/
     height:80vh;
     border: 2px;
@@ -25,9 +25,15 @@ body{
     background-color: hsla(227, 73%, 56%, .5); 
 }
 
-@media screen and (min-width: 630px){
+@media screen and (min-width: 560px){
   .profile-card{
     margin:2.5rem 8% 2.5rem auto;
+  }
+}
+@media screen and (min-width:630px){
+  .profile-card{
+    margin:2.5rem 8% 2.5rem auto;
+    width:40%;
   }
 }
 .head, .content{
@@ -37,10 +43,10 @@ body{
 
 img{
   position:relative;
-  left:calc(100% - 120px);
-  width:120px;
-  height:120px;
-  margin-top: 2rem;
+  left:calc(100% - 100px);
+  width:100px;
+  height:100px;
+  margin-top: .5rem;
   border: 1px solid #000;
   border-radius: 50%;
   padding:1px;
@@ -52,11 +58,11 @@ img:hover {
   transition: all 0.5s ease-in-out;
 }
 .name-headline{
-  margin-top: 1.3rem;
+  margin-top: .5rem;
   width:100%;
 }
 
 .name-headline h1{
-  font-size: 2rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-family: 'Pacifico', cursive;
 }
