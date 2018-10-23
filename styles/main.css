@@ -15,7 +15,7 @@ body{
 
 .profile-card{
     position:relative;
-    top:1.3rem;
+    top:1rem;
     margin: 1.1rem auto;
     padding:.5rem;
     width:65%;
@@ -103,10 +103,46 @@ img:hover {
 .links li a :hover{
   color:hsl(195, 1%, 40%);
 }
+#mail-span{
+  font-size:.7rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:hsl(195, 1%, 22%);
+  color:#fff;
+  border-radius:2px;
+  padding:.2rem;
+  position: relative;
+  left:-2rem;
+  top:.7rem;
+  visibility:hidden;
+}
+#linked-span{
+  font-size: .7rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:hsl(195, 1%, 22%);
+  color:#fff;
+  border-radius:2px;
+  padding:.2rem;
+  position:relative;
+  left:-2rem;
+  top:.7rem;
+  visibility:hidden;
+}
 
+#f-span{
+  font-size: .7rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:hsl(195, 1%, 22%);
+  color:#fff;
+  border-radius:2px;
+  padding:.2rem;
+  position:relative;
+  left:-2rem;
+  top:.7rem;
+  visibility:hidden;
+}
 @media screen and (min-width: 560px){
   .profile-card{
-    margin:1.5rem 8% 1.5rem auto;
+    margin:1rem 8% 1.5rem auto;
     width:50%;
   }
   
@@ -129,7 +165,7 @@ img:hover {
 }
 @media screen and (min-width:640px){
   .profile-card{
-    margin:1.5rem 8% 1.5rem auto;
+    margin:1rem 8% 1.5rem auto;
     width:45%;
   }
 }

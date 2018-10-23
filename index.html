@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="/About-me/styles/main.css">
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <script src="/About-me/linksOverOut.js"></script>
   </head>
   <body>
     <div class="profile-card">
@@ -27,17 +28,20 @@
         <p class="about">Języki jakimi się posługuję to polski, angielski i trochę rosyjski.</p>
         <ul class="links">
           <li>
-            <a href="mailto:r.bujnowicz@gmail.com">
+            <a href= "mailto:r.bujnowicz@gmail.com" onmousemove="mouseOver('mail-span' , 'Napisz do mnie')" onmouseout="mouseOut('mail-span')">
               <i class="fas fa-envelope"></i>
             </a>
+            <span id="mail-span"></span>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/radoslaw-bujnowicz-a81452111/" target="_blank">
+            <a href="https://www.linkedin.com/in/radoslaw-bujnowicz-a81452111/" target="_blank" onmouseover="mouseOver('linked-span', 'Znajdź mnie na LinkedIn')" onmouseout="mouseOut('linked-span')">
               <i class="fab fa-linkedin"></i>
             </a>
+            <span id="linked-span"></span>
           </li>
           <li>
-            <a href="https://www.facebook.com/profile.php?id=100028085980757" target="blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100028085980757" target="blank" onmouseover="mouseOver('f-span', 'Znajdź mnie na Facebook')" onmouseout="mouseOut('f-span')"><i class="fab fa-facebook"></i></a>
+            <span id="f-span"></span>
           </li>
         </ul>
       </div>
