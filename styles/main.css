@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    font-size:100%;
+    /*font-size:100%;*/
 }
 body{
     background: url('/About-me/sailboat.jpg') no-repeat center center fixed;
@@ -10,32 +10,22 @@ body{
     justify-content:right;
     height:100vh;
     position:relative;
+    color:hsl(195, 1%, 22%);
 }
 
 .profile-card{
     position:relative;
     top:1.3rem;
-    margin: 2.5rem auto;
+    margin: 1.5rem auto;
     padding:.5rem;
     width:65%;
     /*max-width: calc(100vw - 10px);*/
-    height:80vh;
+    height:85vh;
     border: 2px;
-    border-radius:8px;
-    background-color: hsla(227, 73%, 56%, .5); 
+    border-radius:10px;
+    background-color: hsla(1, 1%, 100%, .3); 
 }
 
-@media screen and (min-width: 560px){
-  .profile-card{
-    margin:2.5rem 8% 2.5rem auto;
-  }
-}
-@media screen and (min-width:630px){
-  .profile-card{
-    margin:2.5rem 8% 2.5rem auto;
-    width:40%;
-  }
-}
 .head, .content{
   margin: 0 auto;
   width:90%;
@@ -58,11 +48,86 @@ img:hover {
   transition: all 0.5s ease-in-out;
 }
 .name-headline{
-  margin-top: .5rem;
+  margin-top: .3rem;
   width:100%;
 }
 
 .name-headline h1{
   font-size: 1rem;
   font-family: 'Pacifico', cursive;
+}
+.name-headline h2{
+  font-size: .9rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: .3rem;
+}
+.from{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .8rem;
+  margin-top: .3rem;
+}
+
+.content::before{
+  display: inline-block;
+  content: "";
+  height: 1px;
+  width:100%;
+  background-color: hsl(195, 1%, 22%);
+  margin:.9rem auto;
+}
+
+@media screen and (min-width: 560px){
+  .profile-card{
+    margin:1.5rem 8% 1.5rem auto;
+    width:50%;
+  }
+  
+  .name-headline h1{
+    font-size: 1.5rem;
+  }
+  .name-headline h2{
+    font-size: 1.2rem;
+  }
+  .from{
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width:640px){
+  .profile-card{
+    margin:1.5rem 8% 1.5rem auto;
+    width:45%;
+  }
+}
+@media scree and (min-width:830px){
+  .profile-card{
+    width:30%;
+  }
+}
+@media screen and (min-width:940px){
+  .profile-card{
+    width:40%;
+  }
+  .name-headline h1{
+    /*font-size: 2rem;*/
+    margin-left:5%;
+  }
+  .name-headline h2{
+    margin-left: 5%;
+    margin-top: .5rem;
+    /*font-size: 1.5rem;*/
+  }
+  .from{
+    margin-left: 5%;
+    margin-top: .5rem;
+  }
+  .content::before{
+  width:90%;
+  margin:.9rem auto;
+  margin-left:5%;
+ }
+}
+@media screen and (min-width:1300px){
+  .profile-card{
+    width:30%;
+  }
 }
