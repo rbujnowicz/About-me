@@ -9,7 +9,7 @@ body{
     background-size: cover;
     display: flex;
     align-items:top;
-    justify-content:right;
+    justify-content:center;
     height:100vh;
     position:relative;
     color:hsl(195, 1%, 22%);
@@ -19,10 +19,9 @@ body{
 .profile-card{
     position:relative;
     top:1rem;
-    margin: 1.1rem auto;
+    margin: 0 auto;
     padding:.5rem;
     width:65%;
-    /*max-width: calc(100vw - 10px);*/
     height:90vh;
     border: 2px;
     border-radius:10px;
@@ -159,15 +158,17 @@ footer{
   color:#fff;
   position:absolute;
   bottom:.2rem;
-  left:3%;
+  margin: .1rem auto;
+  /*left:2%;*/
   font-weight: 600;
+  
 }
 
 /*alternative styles for depended on screen resolutions*/
 
 @media screen and (min-width: 560px){
   .profile-card{
-    margin:1rem 8% 1.5rem auto;
+    /*margin:1rem 8% 1.5rem auto;*/
     width:50%;
   }
   
@@ -190,11 +191,8 @@ footer{
 }
 @media screen and (min-width:640px){
   .profile-card{
-    margin:1rem 8% 1.5rem auto;
+    /*margin:1rem 8% 1.5rem auto;*/
     width:45%;
-  }
-  footer{
-    left:10%;
   }
 }
 @media scree and (min-width:830px){
